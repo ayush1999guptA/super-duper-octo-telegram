@@ -1,0 +1,21 @@
+{% extends 'web/base.html' %}
+{% block title %}Getting Started{% endblock %}
+{% block navbar %}
+{% endblock %}
+{% block body %}
+    
+    <div class="container">
+        <img src="https://scontent.frdp1-1.fna.fbcdn.net/v/t1.0-9/36910712_2068830326703381_6291771113160572928_n.jpg?_nc_cat=111&_nc_ht=scontent.frdp1-1.fna&oh=1930fe86de73778d0f4a8648874abfdd&oe=5D75389F" height="100" width="100" style="margin-top:10%" alt="">
+        <p style="margin-top:3%;font-size: 300%;color: #ffffff"> This is PCON or programming club of Nit Jamshedpur's so called Student portal.This was created for test purposes
+        only ,the final iteration will be way more good. As you know PCON, programming club of Nit Jamshedpur,is a group of programming enthusiasts
+    and developers from various departments of the institute,
+    who aim at improving the programming culture of the institute.
+    The Students of the Club have been proving their mettle in
+    various fields pertaining to Computer Science since long.
+    The Club made it's Place amongst the official clubs
+    of the intitute on 18th april 2018</p>
+        <form action="{% url 'index' %}" method="get">
+            <button type="submit" class="btn btn-outline-light">Getting Started</button>
+        </form>
+    </div>
+{% endblock %}

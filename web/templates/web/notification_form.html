@@ -1,0 +1,21 @@
+{% extends 'web/base.html' %}
+{% block title %}Add Notification{% endblock %}
+{% block body %}
+<div class="container">
+  <div id="card1" class="card mx-auto " style="width: 30rem;">
+  <div class="card-body">
+    <h5 class="card-title">Add a Notification</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Here you can Create a new Notification</h6>
+    <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      {% include 'web/form-template.html' %}
+      <div class="form-group">
+        <button type="submit" class="btn btn-success">Submit</button>
+      </div>
+    </form>
+
+  </div>
+</div>
+
+</div>
+{% endblock %}

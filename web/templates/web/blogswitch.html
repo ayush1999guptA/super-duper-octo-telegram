@@ -1,0 +1,30 @@
+{% extends 'web/base.html' %}
+{% block body %}
+
+    <div class="container" align="center" style="margin-top: 30px;">
+    <p>
+      <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Yeh Hai Aam Zindagi</a>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Yeh Hai Mentos Zindagi</button>
+    </p>
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+          <div class="card card-body" style="width: 30rem;">
+              <button class="btn btn-warning"><a href="{% url 'blw'%}"> Blogs without Media :(</a></button>
+               <img class="card-img" src="https://scontent.fluh2-1.fna.fbcdn.net/v/t1.0-9/27332676_1507184289378842_1628563930510679733_n.jpg?_nc_cat=106&_nc_ht=scontent.fluh2-1.fna&oh=ef898946b9d6fd0ca6a261f48d104312&oe=5D349E26">
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+          <div class="card card-body" style="width: 30rem;">
+              <button class="btn btn-warning"><a href="{% url 'bl' %}"> Blogs with Media :)</a></button>
+              <img class="card-img" src="https://scontent.fluh2-1.fna.fbcdn.net/v/t1.0-9/30688269_2021582994538201_6279623738761674752_n.jpg?_nc_cat=102&_nc_ht=scontent.fluh2-1.fna&oh=27a91c98e11b2fa063b2cf37f277b599&oe=5D359D4D">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+{% endblock %}

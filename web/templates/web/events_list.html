@@ -1,0 +1,41 @@
+{% extends 'web/base.html' %}
+{% block title %}All Events{% endblock %}
+{% block body %}
+{% if all_events %}
+<div class ="container ">
+  <div class="row">
+{% for i in all_events %}
+
+
+    <div class="col-3" >
+    <div class="card mx-auto" style="width: 18rem;margin-top: 20%; ">
+  <img src="{{i.poster.url}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{i.name}}</h5>
+    <p class="card-text">
+      <h6>{{i.type}}<br>
+      {{i.date}}<br>
+      {{i.time}}<br>
+      {{i.venue}}<br></h6>
+
+      {{i.discription}}
+
+    </p>
+  </div>
+    </div>
+      </div>
+
+
+{% endfor %}
+    </div>
+</div>
+{% else %}
+<div class="container">
+  <p style=" font-family: 'Dosis', sans-serif ;font-size: 80px; font-weight: bold;margin-top: 20%;">
+    There are no up coming  events
+  </p>
+  </div>
+{% endif %}
+
+{% endblock%}
+

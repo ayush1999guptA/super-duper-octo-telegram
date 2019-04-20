@@ -1,0 +1,32 @@
+{% extends 'web/base.html' %}
+{% load staticfiles %}
+
+{% block body %}
+
+    <div class="container-fluid" style="margin-top: 20px;">
+
+    <div class="row justify-content-center">
+        <div class="card-deck">
+         <div class="col-3">
+            <div class="card" style="width: 20rem; height: 25rem;">
+              <img src="{{student.photo.url}}" alt="user profile picture" height="350">
+            </div>
+         </div>
+        <div class="col-8">
+            <div class="card" style="width: 80rem;">
+              <div class="card-body">
+                <h5 class="card-title">User Detail</h5>
+                <p class="card-text">
+                    <h1>{{student.name}}</h1><br>
+                    <h2>{{student.rollnumber}}</h2><br>
+                    <h3>{{student.branch}}</h3><br>
+                    <h3>{{student.year}} Year</h3><br>
+                    {{student.discription}}</p>
+
+            </div>
+        </div>
+        </div>
+         </div>
+    </div>
+
+{% endblock %}

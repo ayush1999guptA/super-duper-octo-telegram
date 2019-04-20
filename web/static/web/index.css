@@ -1,0 +1,31 @@
+.heading
+{
+    font-family: 'Dosis', sans-serif;
+
+}
+body
+{
+    background-image: url("background.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.carousel
+{
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.card
+{
+    padding: 3%;
+}
+.carousel {
+    border-radius: 55px 55px 55px 55px;
+    overflow: hidden;
+    ...
+}
+#card1
+{
+    margin-top: 5%;
+}

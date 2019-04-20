@@ -1,0 +1,24 @@
+{% extends 'web/base.html' %}
+{% block title %}Admin{% endblock %}
+{% block navbar %}{% endblock %}
+{% block body %}
+<div class="container">
+    <div class="card mx-auto" style="width: 50rem;margin-top: 20%">
+  <div class="card-body">
+    <h5 class="card-title">Admin</h5>
+    <h6 class="card-subtitle mb-2 text-muted">various addition can be done here</h6>
+    <p class="card-text">
+        <h1><a href="{% url 'see'%}">Notification</a></h1><br>
+      <form action="{% url 'push' %}">
+        <button type="submit" class="btn btn-dark">Push Notification</button>
+      </form>
+      <h1><a href="#">Events</a></h1><br>
+      <form action="{% url 'add-event' %}">
+        <button type="submit" class="btn btn-dark">Push Events</button>
+      </form>
+
+    </p>
+  </div>
+</div>
+</div>
+{% endblock %}

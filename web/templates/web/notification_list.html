@@ -1,0 +1,22 @@
+{% extends 'web/base.html' %}
+{% block title %}All Notifications{% endblock %}
+{% block body %}
+
+{% for i in all_notification %}
+    <div class="col-3" >
+    <div class="card mx-auto" style="width: 30rem;margin-top: 20%; ">
+  <div class="card-body">
+    <h5 class="card-title">{{i.message}}</h5>
+    <p class="card-text">
+      <h5>{{i.writeup}}</h5><br>
+       <form style="display:inline;" action="{% url 'pop' i.pk %}" method="get">
+           <button type="submit" class="btn btn-danger"><i class="fas fa-trash-alt"></i></i>delete</button>
+       </form>
+
+    </p>
+  </div>
+    </div>
+      </div>
+{% endfor %}
+
+{% endblock%}

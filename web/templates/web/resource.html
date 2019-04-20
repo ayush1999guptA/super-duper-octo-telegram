@@ -1,0 +1,101 @@
+{% extends 'web/base.html' %}
+{% block body %}
+
+<div class="card mx-auto">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Data Structures and Algorithms
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <ul>
+                    <li>
+                        <a href="https://www.geeksforgeeks.org/data-structures/">https://www.geeksforgeeks.org/data-structures/</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/pcon-jsr/Data-Structures-and-Algorithms-Workshop">https://github.com/pcon-jsr/Data-Structures-and-Algorithms-Workshop</a>
+                    </li>
+                    <li>
+                        <a href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/">https://www.geeksforgeeks.org/fundamentals-of-algorithms/</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Web Development
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                  <ul>
+                      <li>
+                          <a href="https://www.w3schools.com/whatis/">https://www.w3schools.com/whatis/</a>
+                      </li>
+                      <li>
+                          <a href="https://www.youtube.com/user/thenewboston">https://www.youtube.com/user/thenewboston</a>
+                      </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  App Development
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <ul>
+                    <li>
+                        <a href="https://buildfire.com/become-mobile-app-developer/">https://buildfire.com/become-mobile-app-developer/</a>
+                    </li>
+                    <li>
+                        <a href="https://www.edx.org/learn/app-development">https://www.edx.org/learn/app-development</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Linux
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+              <ul>
+                  <li>
+                      <a href="https://www.tecmint.com/free-online-linux-learning-guide-for-beginners/">
+                          https://www.tecmint.com/free-online-linux-learning-guide-for-beginners/
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://www.edx.org/learn/linux">https://www.edx.org/learn/linux/</a>
+
+                  </li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>
+
+{% endblock %}

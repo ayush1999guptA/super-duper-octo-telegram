@@ -1,0 +1,45 @@
+{% extends 'web/base.html' %}
+{% block title %}All Blogs{% endblock %}
+{% block body %}
+{% if all_blog %}
+<div class ="container ">
+    <form class="mx-auto" action="{% url 'ab' %}">
+        <button class="btn btn-outline-light mx-auto " type="submit"style="margin-top: 10%" > Post Blog</button>
+    </form>
+  <div class="row">
+{% for i in all_blog %}
+
+
+    <div class="col-3" >
+    <div class="card mx-auto" style="width: 50rem;margin-top: 20%; ">
+  <div class="card-body">
+    <h5 class="card-title">{{i.bloggername}}</h5>
+    <p class="card-text">
+     <h2>{{i.blogsubject}}</h2>
+
+      <form action="{{ i.blogmedia.url }}">
+          <button type="submit" class="btn btn-primary btn-lg">Attached File</button>
+
+      </form>
+
+      {{ i.blog}}
+
+    </p>
+  </div>
+    </div>
+      </div>
+
+
+{% endfor %}
+    </div>
+</div>
+{% else %}
+<div class="container">
+  <p style=" font-family: 'Dosis', sans-serif ;font-size: 80px; font-weight: bold;margin-top: 20%;">
+    There are no Blogs
+  </p>
+  </div>
+{% endif %}
+
+{% endblock%}
+
